@@ -1,0 +1,40 @@
+@import "global/workSpace/index";
+.social_media{
+  @include flexBox(center,center);
+  .item{
+    margin: 0 5px;
+    background-color: $specific;
+    border-radius: 50%;
+    @include flexBox(center,center);
+    &:hover{
+      &.telegram{
+        background-color: $telegram;
+      }
+      &.facebook{
+        background-color: $facebook;
+      }
+      &.whatsapp{
+        background-color: $whatsapp;
+      }
+      &.instagram{
+        background: $instagram;
+      }
+      svg{
+        path{
+          fill: #c1c1c1;
+        }
+      }
+    }
+    a{
+      display: block;
+      padding: 10px;
+    }
+    svg{
+      @include square(20px);
+      display: block;
+      path{
+        fill: var(--grayscale-color);
+      }
+    }
+  }
+}

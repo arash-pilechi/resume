@@ -1,0 +1,10 @@
+{
+  "language": "language",
+  "languages": {
+    "fa": "persian",
+    "en": "english",
+    "ar": "arabic"
+  },
+  "light_theme": "Light theme",
+  "dark_theme": "Dark theme"
+}

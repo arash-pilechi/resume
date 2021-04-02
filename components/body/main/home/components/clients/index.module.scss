@@ -1,0 +1,61 @@
+@import "global/workSpace/index";
+
+.clients{
+  @include flexBox(center,center);
+  flex-wrap: wrap;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+  .slider{
+    width: 80%;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+    .client{
+      display: block;
+      position: relative;
+      text-align: center;
+      filter: grayscale(1);
+      border-radius: 50%;
+      &:hover{
+        filter: grayscale(0);
+      }
+      img{
+        border-radius: 50%;
+      }
+    }
+  }
+  .moreBox{
+    width: 20%;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      margin-top: 20px;
+    }
+    @include flexBox(center,flex-end);
+    .more{
+      margin: 10px 0;
+      border: 1px solid var(--grayscale-color);
+      padding: 5px;
+      border-radius: 16px;
+      @include flexBox(center,center);
+      &:hover{
+        background-color: $specific;
+      }
+      .text{
+        span{
+          color: var(--grayscale-color);
+        }
+      }
+      .icon{
+        padding: 0 10px;
+        svg{
+          @include square(15px);
+          display: block;
+          path{
+            fill: var(--grayscale-color);
+          }
+        }
+      }
+    }
+  }
+}

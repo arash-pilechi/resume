@@ -1,0 +1,21 @@
+@import "global/workSpace/index";
+.sides{
+  margin-bottom: 50px;
+  @include flexBox(center,center);
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+  .side_a{
+    width: 250px;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  .side_b{
+    padding: 0 20px;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+}

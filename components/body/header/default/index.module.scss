@@ -1,0 +1,44 @@
+@import "global/workSpace/index";
+.header{
+  .holder{
+    height: 50px;
+    @include flexBox(stretch,center);
+  }
+  .segment{
+    width: 50%;
+    &:nth-child(1){
+      @include flexBox(center,flex-start);
+    }
+    &:nth-child(2){
+      @include flexBox(center,flex-end);
+    }
+  }
+  .keys{
+    @include flexBox(center,center);
+    .key{
+      padding-inline-end: 15px;
+      cursor: pointer;
+      position: relative;
+      &.home{
+        a{
+          display: block;
+        }
+      }
+      &.language{
+
+      }
+      &.grayscale_theme{
+
+      }
+      .icon{
+        svg{
+          @include square(20px);
+          display: block;
+          path{
+            fill: var(--grayscale-color);
+          }
+        }
+      }
+    }
+  }
+}

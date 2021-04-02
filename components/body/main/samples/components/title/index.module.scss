@@ -1,0 +1,12 @@
+@import "global/workSpace/index";
+
+.title{
+  h1{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 50px;
+    padding-bottom: 15px;
+    color: var(--grayscale-color);
+    border-bottom: 1px solid $specific;
+  }
+}

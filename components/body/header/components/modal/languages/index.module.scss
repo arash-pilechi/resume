@@ -1,0 +1,48 @@
+@import "global/workSpace/index";
+.languagesModal{
+  width: 100%;
+  min-width: 200px;
+  position: absolute;
+  z-index: 2;
+  top: 8px;
+  padding: 10px;
+  border-radius: 6px;
+  background-color: var(--grayscale-transparent2);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.06),
+  0 0 5px rgba(0, 0, 0, 0.12);
+  .language{
+    width: 100%;
+    margin-bottom: 15px;
+    &:nth-last-child(1){
+      margin-bottom: 0;
+    }
+    a{
+      @include flexBox(center,flex-start);
+    }
+    .icon{
+      svg{
+        @include square(15px);
+        display: block;
+      }
+    }
+    .text{
+      padding: 0 15px;
+      span{
+        color: var(--grayscale-color);
+      }
+    }
+  }
+}
+
+html{
+  &:lang(fa), &:lang(ar){
+    .languagesModal{
+      left: 0;
+    }
+  }
+  &:lang(en){
+    .languagesModal{
+      right: 0;
+    }
+  }
+}

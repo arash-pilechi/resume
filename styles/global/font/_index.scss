@@ -1,0 +1,41 @@
+@font-face {
+  font-family: IRANSans;
+  src: url("/fonts/IranSans/IRANSansWeb.woff") format("woff");
+  src: url("/fonts/IranSans/IRANSansWeb.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: DroidArabicKufi;
+  src: url("/fonts/DroidArabicKufi/DroidArabicKufi.woff") format("woff");
+  src: url("/fonts/DroidArabicKufi/DroidArabicKufi.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("/fonts/Roboto/Roboto.woff") format("woff");
+  src: url("/fonts/Roboto/Roboto.woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+html{
+  &:lang(fa) {
+    &,
+    & * {
+      font: 400 small "IRANSans", sans-serif, Tahoma, Helvetica, Arial;
+    }
+  }
+  &:lang(ar) {
+    &,
+    & * {
+      font: 400 12px "DroidArabicKufi", sans-serif, Tahoma, Helvetica, Arial;
+    }
+  }
+  &:lang(en) {
+    &,
+    & * {
+      font: 400 15px "Roboto", sans-serif, Helvetica, Arial, Tahoma;
+    }
+  }
+}

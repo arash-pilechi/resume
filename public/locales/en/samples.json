@@ -1,0 +1,97 @@
+{
+  "user1": {
+    "seo": {
+      "title": "Portfolio | Resume of Arash Pilechi",
+      "description": "introduction and view examples of designed sites",
+      "keywords": "Resume of Arash Pilechi, programmer, Web designer, web site designer, web developer, web site developer, frontend programmer, nextjs programmer, next js programmer, react programmer, js programmer, javascript programmer, angularjs programmer, angular js programmer, jquery programmer, html programmer, Css programmer, sass programmer, scss programmer, programmer familiar with php, programmer familiar with laravel, programmer familiar with codeigniter, programmer familiar with phpmyadmin"
+    },
+    "title": {
+      "online": "Online portfolio",
+      "offline": "Offline portfolio"
+    },
+    "samples": {
+      "taxi_360": {
+        "name": "taxi 360",
+        "describe": "Web application for comparing online taxis and booking taxis from all internet taxis",
+        "position": "Programmer and front-end department manager"
+      },
+      "salamati_24": {
+        "name": "salamati 24",
+        "describe": "Salamat 24 website to book doctor's appointments in offices, clinics and online and text video consulting offline",
+        "position": "Programmer and front-end department manager"
+      },
+      "baazad": {
+        "name": "Baazad",
+        "describe": "Free web application for discount system, App Store, Web Store and e-wallet",
+        "position": "Programmer and front-end department manager"
+      },
+      "hamihamrah": {
+        "name": "hamihamrah",
+        "describe": "Complex Sponsor Website for Introducing and Ordering Products",
+        "position": "front-end programmer"
+      },
+      "hami_cms": {
+        "name": "hami software",
+        "describe": "Comprehensive online reservation software related to tourism in seven themes and two sizes of mobile and desktop",
+        "position": "Client-side CMS programmer and front-end programmer",
+        "related": {
+          "belityar": "Belityar Agency",
+          "saina110": "Saina Seir Agency",
+          "asa24": "Asa Parvaz Agency",
+          "safarnetwork": "Safar Network Agency",
+          "nasimbehesht724": "Nasim Behesht Agency"
+        }
+      },
+      "mycrs": {
+        "name": "My CRS",
+        "describe": "My CRS website to introduce and order products",
+        "position": "Developer and head of front-end"
+      },
+      "mycrs_cms": {
+        "name": "My CRS Software",
+        "describe": "Comprehensive software for building a variety of stores, online and offline reservation systems, digital menus of restaurants and coffee shops and personal websites. Designed in several themes with the ability to be selected by the site admin and implemented in two sizes of mobile and desktop",
+        "position": "Developer, front-end manager and client-side CMS programmer",
+        "related": {
+          "itfipin": "Iranian Tennis Federation",
+          "abmivesajjad": "Sajjad juice",
+          "satoormhd": "Satoor",
+          "europevisa724": "Working residence in Portugal and European services",
+          "coffetrust": "Trust Coffe",
+          "nhtp": "Comprehensive NHTP Consortium Health Tourism Services System",
+          "danjehpizza": "Pizza Danje",
+          "siamo": "Siamo Studio",
+          "package_hashtagmedia": "Hashtag Media",
+          "niikfood": "Nick Food"
+        }
+      },
+      "giant_mashhad": {
+        "name": "Giant Bicycle",
+        "describe": "Giant bicycle brand official website, Mashhad branch",
+        "position": "Head of IT Code Afarin Group"
+      },
+      "hashtag_media": {
+        "name": "hashtag media",
+        "describe": "Website to introduce Instagram media hashtag media",
+        "position": "front-end programmer"
+      },
+      "negin_khatam": {
+        "name": "negin khatam",
+        "describe": "Negin Khatam store for sales and training in making decorative products, Negin Khatam collection",
+        "position": "Head of IT Code Afarin Group"
+      },
+      "tooscafe": {
+        "name": "tooscafe",
+        "describe": "Toos Cafe website to register barista students and study and receive recipes",
+        "position": "Head of IT Code Afarin Group"
+      },
+      "code_afarin": {
+        "name": "Code Afarin",
+        "describe": "Website of Kod Afarin Group to introduce portfolio and register orders",
+        "position": "Head of IT Code Afarin Group"
+      }
+    }
+  },
+  "view": "View",
+  "position": "position",
+  "related": "Some users of this application"
+}

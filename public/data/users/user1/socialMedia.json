@@ -1,0 +1,42 @@
+[
+  {
+    "id": "telegram",
+    "visibility": true,
+    "address": {
+      "fa": "https://t.me/arash_pilechi",
+      "en": "https://t.me/arash_pilechi",
+      "ar": "https://t.me/arash_pilechi"
+    },
+    "icon": "telegram"
+  },
+  {
+    "id": "instagram",
+    "visibility": true,
+    "address": {
+      "fa": "http://instagram.com/arash.pilechi",
+      "en": "http://instagram.com/arash.pilechi",
+      "ar": "http://instagram.com/arash.pilechi"
+    },
+    "icon": "instagram"
+  },
+  {
+    "id": "whatsapp",
+    "visibility": true,
+    "address": {
+      "fa": "https://wa.me/+989154134341",
+      "en": "https://wa.me/+989154134341",
+      "ar": "https://wa.me/+989154134341"
+    },
+    "icon": "whatsapp"
+  },
+  {
+    "id": "facebook",
+    "visibility": false,
+    "address": {
+      "fa": "https://www.facebook.com/arash.peelechi/",
+      "en": "https://www.facebook.com/arash.peelechi/",
+      "ar": "https://www.facebook.com/arash.peelechi/"
+    },
+    "icon": "facebook"
+  }
+]

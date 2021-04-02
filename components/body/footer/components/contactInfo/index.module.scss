@@ -1,0 +1,29 @@
+@import "global/workSpace/index";
+.social_media{
+  @include flexBox(center,center);
+  .item{
+    margin: 0 5px;
+    background-color: $specific;
+    border-radius: 50%;
+    @include flexBox(center,center);
+    &:hover{
+      background-color: #002e39;
+      svg{
+        path{
+          fill: #c1c1c1;
+        }
+      }
+    }
+    a{
+      display: block;
+      padding: 10px;
+    }
+    svg{
+      @include square(20px);
+      display: block;
+      path{
+        fill: var(--grayscale-color);
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "react":{
+    "text": "React",
+    "percent": 95,
+    "icon": {
+      "type": "svg",
+      "name": "react"
+    }
+  },
+  "angularJs": {
+    "text": "Angular JS",
+    "percent": 95,
+    "icon": {
+      "type": "svg",
+      "name": "angularJS"
+    }
+  },
+  "php":{
+    "text": "PHP",
+    "percent": 80,
+    "icon": {
+      "type": "svg",
+      "name": "php"
+    }
+  },
+  "nextJs":{
+    "text": "Next Js",
+    "percent": 95,
+    "icon": {
+      "type": "svg",
+      "name": "nextJs"
+    }
+  },
+  "scss":{
+    "text": "SCSS",
+    "percent": 99,
+    "icon": {
+      "type": "svg",
+      "name": "scss"
+    }
+  },
+  "jquery": {
+    "text": "JQuery",
+    "percent": 99,
+    "icon": {
+      "type": "svg",
+      "name": "jquery"
+    }
+  },
+  "html": {
+    "text": "HTML 5",
+    "percent": 99,
+    "icon": {
+      "type": "svg",
+      "name": "html"
+    }
+  },
+  "css": {
+    "text": "CSS 3",
+    "percent": 99,
+    "icon": {
+      "type": "svg",
+      "name": "css"
+    }
+  },
+  "javaScript":{
+    "text": "JavaScript",
+    "percent": 99,
+    "icon": {
+      "type": "svg",
+      "name": "javascript"
+    }
+  },
+  "laravel":{
+    "text": "Laravel",
+    "percent": 50,
+    "icon": {
+      "type": "svg",
+      "name": "laravel"
+    }
+  },
+  "codeigniter":{
+    "text": "Codeigniter",
+    "percent": 70,
+    "icon": {
+      "type": "svg",
+      "name": "codeigniter"
+    }
+  },
+  "database":{
+    "text": "My SQL",
+    "percent": 60,
+    "icon": {
+      "type": "svg",
+      "name": "database"
+    }
+  }
+}

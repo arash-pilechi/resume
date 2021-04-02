@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  color: dimgray;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  transition: color ease 0.25s;
+  direction: var(--direction);
+  -webkit-tap-highlight-color: transparent;
+  &::selection {
+    color: inherit;
+    background: transparent;
+  }
+}
+html,
+body,
+#__next {
+  min-width: 100%;
+  width: 100%;
+  height: auto !important;
+  min-height: 100vh;
+  background-attachment: fixed !important;
+}
+body {
+  background: linear-gradient(180deg, var(--grayscale-gradient1) 0%, var(--grayscale-gradient2) 50%, var(--grayscale-gradient3) 100%), var(--background) 0 0 var(--grayscale-background);
+  background-size: 400px;
+  &.freeze {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+button:not(.ril__builtinButton):not(.Calendar__monthArrowWrapper):not(.Calendar__monthSelectorItemText):not(.Calendar__yearSelectorText) {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  min-height: 36px;
+  min-width: 88px;
+  line-height: 36px;
+  vertical-align: middle;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 3px;
+  box-sizing: border-box;
+  padding: 0 6px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-style: inherit;
+  font-variant: inherit;
+  font-family: inherit;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+  /*box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26);*/
+  &:not([class*="submit"]):not([class*="cancel"]) {
+    border: 0;
+  }
+  &:disabled {
+    background-color: #fcfcfc;
+    cursor: not-allowed !important;
+    &,
+    & * {
+      color: #a9afbd;
+      fill: #a9afbd;
+    }
+  }
+  @media print {
+    display: none !important;
+  }
+}
+ul {
+  list-style-type: none;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+li {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+input {
+  max-width: 100%;
+  min-height: 24px;
+  line-height: 24px;
+  text-align: initial;
+  padding: 0 2px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  border: 1px solid #e6e6e6;
+  color: var(--grayscale-color);
+  background-color: var(--grayscale-background);
+  &[placeholder="____/__/__"],
+  &[placeholder="____-__-__"] {
+    direction: ltr;
+    text-align: left;
+  }
+  &:disabled {
+    background-color: #fcfcfc;
+    background-image: url("/images/pattern/dot.png");
+    background-size: 8px;
+    background-position: center;
+    background-repeat: repeat;
+    background-blend-mode: darken;
+    cursor: not-allowed !important;
+  }
+  &::placeholder {
+    color: var(--grayscale-color);
+  }
+}
+select {
+  max-width: 100%;
+  padding: 0 5px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  border: 1px solid #e6e6e6;
+  background-color: white;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  &::-ms-expand {
+    display: none;
+  }
+}
+textarea {
+  resize: vertical;
+  padding: 0 2px;
+  box-sizing: border-box;
+  border-radius: 2px;
+  border: 1px solid #e6e6e6;
+}
+span {
+  word-break: break-word;
+}
+svg.defaultColors {
+  * {
+    fill: inherite !important;
+  }
+}
+input::selection,
+textarea::selection,
+p::selection,
+span::selection,
+strong::selection,
+a::selection,
+li::selection {
+  color: var(--rgb-c5-inverse);
+  background: var(--rgb-c5);
+  * {
+    color: var(--rgb-c5-inverse);
+  }
+}
+pre {
+  white-space: pre-wrap;
+}
+b, strong{
+  font-weight: bold;
+}
+noscript{
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  p {
+    width: 100%;
+    text-align: center;
+    font-family: Tahoma;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+.rtl {
+  select {
+    direction: rtl;
+  }
+}
+.ltr {
+  select {
+    direction: ltr;
+  }
+}
+

@@ -1,0 +1,16 @@
+@import "global/workSpace/index";
+.footer{
+  margin: 50px 0 0 0;
+  padding: 0 0 10px 0;
+  .holder{
+    padding-top: 20px;
+    @include flexBox(center,center);
+    border-top: 1px solid $specific;
+  }
+  .separator{
+    width: 3px;
+    height: 30px;
+    border-radius: 6px;
+    background-color: $specific;
+  }
+}

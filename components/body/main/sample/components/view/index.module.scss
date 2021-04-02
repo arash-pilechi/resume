@@ -1,0 +1,33 @@
+@import "global/workSpace/index";
+
+.view{
+	width: 100%;
+	border-radius: 6px;
+	margin-top: 30px;
+	@include flexBox(center,center);
+	a{
+		display: block;
+		button{
+			min-width: 200px !important;
+			background-color: #007aff;
+			display: flex !important;
+			align-items: center;
+			justify-content: center;
+			.icon{
+				svg{
+					@include square(15px);
+					display: block;
+					path{
+						fill: white;
+					}
+				}
+			}
+			.text{
+				padding: 0 10px;
+				span{
+					color: white;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,6 @@
+@import "global/workSpace/index";
+
+.samples{
+	@include flexBox(center,center);
+	flex-wrap: wrap;
+}

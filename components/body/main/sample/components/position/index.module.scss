@@ -1,0 +1,14 @@
+@import "global/workSpace/index";
+
+.position{
+	margin-top: 30px;
+	span{
+		color: var(--grayscale-color);
+		&:nth-child(1){
+			opacity: 0.8;
+		}
+		&:nth-child(2){
+			padding: 0 15px;
+		}
+	}
+}

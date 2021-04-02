@@ -1,0 +1,33 @@
+@import "global/workSpace/index";
+
+.title{
+	margin-top: 30px;
+	@include flexBox(center,flex-start);
+	a{
+		&:hover{
+			.text{
+				h1{
+					color: cornflowerblue;
+				}
+			}
+		}
+	}
+	.logo{
+		@include square(60px);
+		border-radius: 50%;
+		@include flexBox(center,center);
+		//background-color: white;
+		//box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+		img{
+			border-radius: 6px;
+		}
+	}
+	.text{
+		padding: 15px;
+		h1{
+			color: var(--grayscale-color);
+			font-weight: bold;
+			font-size: 18px;
+		}
+	}
+}

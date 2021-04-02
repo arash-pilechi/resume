@@ -1,0 +1,119 @@
+@import "global/workSpace/index";
+
+.sample{
+	width: 250px;
+	height: 300px;
+	position: relative;
+	border-radius: 16px;
+	margin: 10px;
+	background-color: var(--grayscale-transparent2);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	&:hover{
+		box-shadow: $shadow_picUp;
+	}
+	a{
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+	.logo{
+		padding: 20px;
+		position: relative;
+		border-radius: 50%;
+		@include flexBox(center,flex-end);
+		.holder{
+			@include square(70px);
+			@include flexBox(center,center);
+			border-radius: 50%;
+			background-color: var(--grayscale-transparent1);
+		}
+		img{
+			border-radius: 50%;
+		}
+	}
+	.triangle{
+		border-style: solid;
+		opacity: 0.3;
+		margin-top: -70px;
+	}
+	.content{
+		width: 100%;
+		border-radius: 0 0 16px 16px;
+		.title{
+			padding: 20px 20px 8px 20px;
+			span{
+				color: var(--grayscale-color);
+				font-weight: bold;
+			}
+		}
+		.holder{
+			height: 160px;
+			background-color: var(--grayscale-transparent1);
+			border-radius: 0 0 16px 16px;
+		}
+		.describe{
+			width: 100%;
+			padding: 20px;
+			p{
+				color: var(--grayscale-color);
+			}
+		}
+		.buttons{
+			width: 100%;
+			position: absolute;
+			bottom: 0;
+			padding: 0 20px;
+			@include flexBox(center,flex-end);
+			.button{
+				margin: 10px 0;
+				border: 1px solid var(--grayscale-color);
+				padding: 5px;
+				border-radius: 16px;
+				@include flexBox(center,center);
+				&:hover{
+					background-color: $specific;
+				}
+				.text{
+					padding-inline-start: 10px;
+					span{
+						color: var(--grayscale-color);
+					}
+				}
+				.icon{
+					padding: 0 10px;
+					svg{
+						@include square(15px);
+						display: block;
+						path{
+							fill: var(--grayscale-color);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+html{
+	&:lang(fa), &:lang(ar){
+		.triangle{
+			border-width: 100px 250px 0 0;
+			border-color: transparent var(--grayscale) transparent transparent;
+		}
+		.content{
+			.title{
+				margin-top: -50px;
+			}
+		}
+	}
+	&:lang(en){
+		.triangle{
+			border-width: 100px 0 0 250px;
+			border-color: transparent transparent transparent var(--grayscale);
+		}
+		.content{
+			.title{
+				margin-top: -46px;
+			}
+		}
+	}
+}

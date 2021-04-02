@@ -1,0 +1,107 @@
+@import "global/workSpace/index";
+
+.technologies{
+	margin-top: 30px;
+	@include flexBox(center,flex-end);
+	flex-wrap: wrap;
+	.technology{
+		margin: 0 10px;
+		&:hover{
+			.icon{
+				&.html{
+					svg{
+						path{
+							fill: $html;
+						}
+					}
+				}
+				&.css{
+					svg{
+						path{
+							fill: $css;
+						}
+					}
+				}
+				&.javascript{
+					svg{
+						path{
+							fill: $javascript;
+						}
+					}
+				}
+				&.scss{
+					svg{
+						path{
+							fill: $scss;
+						}
+					}
+				}
+				&.angularJS{
+					svg{
+						path{
+							fill: $angularJS;
+						}
+					}
+				}
+				&.react{
+					svg{
+						path{
+							fill: $react;
+						}
+					}
+				}
+				&.php{
+					svg{
+						path{
+							fill: $php;
+						}
+					}
+				}
+				&.database{
+					svg{
+						path{
+							fill: $database;
+						}
+					}
+				}
+				&.nextJs{
+					svg{
+						path{
+							fill: $nextJs;
+						}
+					}
+				}
+				&.laravel{
+					svg{
+						path{
+							fill: $laravel;
+						}
+					}
+				}
+				&.codeigniter{
+					svg{
+						path{
+							fill: $codeigniter;
+						}
+					}
+				}
+				&.jquery{
+					svg{
+						path{
+							fill: $jquery;
+						}
+					}
+				}
+			}
+		}
+		.icon{
+			@include flexBox(center,center);
+			svg{
+				@include square(25px);
+				path{
+					fill: var(--grayscale-color);
+				}
+			}
+		}
+	}
+}

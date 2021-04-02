@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/*__________ share styles ____________*/
+@import "workSpace/index";
+@import "font/index";
+@import "scrollbar/index";
+@import "elements/index";
+@import "preloaders/index";
+@import "alerts/index";
+@import "nProgress/index";
+@import "lightBox/index";
+.container {
+  width: 90%;
+  min-width: 300px;
+  max-width: 850px;
+  margin: auto;
+}
+.hidden {
+  display: none !important;
+}
+.fade,
+.noOpacity {
+  opacity: 0 !important;
+}
+.noScroll {
+  height: 100vh;
+  overflow: hidden;
+}
+
+[data-nextjs-dialog-content] {
+  direction: ltr !important;
+}
+
+html{
+  &:lang(fa), &:lang(ar){
+
+  }
+  &:lang(en){
+    .mirror {
+      transform: rotate(180deg);
+    }
+  }
+}

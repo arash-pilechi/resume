@@ -1,0 +1,39 @@
+@import "global/workSpace/index";
+
+.related{
+  @media only screen and (max-width: 768px) {
+    margin-top: 20px;
+  }
+  .title{
+    margin-bottom: 15px;
+    p{
+      opacity: 0.8;
+      color: var(--grayscale-color);
+    }
+  }
+  .list{
+    padding: 0 30px;
+    .item{
+      margin-bottom: 5px;
+      @include flexBox(center,flex-start);
+      &:nth-last-child(1){
+        margin-bottom: 0;
+      }
+      &:before{
+        content: "-";
+        padding: 0 5px;
+      }
+      &:hover{
+        p{
+          color: cornflowerblue;
+        }
+      }
+      a{
+        display: block;
+      }
+      p{
+        color: var(--grayscale-color);
+      }
+    }
+  }
+}

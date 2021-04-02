@@ -1,0 +1,150 @@
+@import "global/workSpace/index";
+
+.specialities{
+  margin-bottom: 50px;
+  @include flexBox(center,center);
+  flex-wrap: wrap;
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+  .slider{
+    width: 80%;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+    .speciality{
+      @include square(50px);
+      position: relative;
+      &:hover{
+        .icon{
+          &.html{
+            svg{
+              path{
+                fill: $html;
+              }
+            }
+          }
+          &.css{
+            svg{
+              path{
+                fill: $css;
+              }
+            }
+          }
+          &.javascript{
+            svg{
+              path{
+                fill: $javascript;
+              }
+            }
+          }
+          &.scss{
+            svg{
+              path{
+                fill: $scss;
+              }
+            }
+          }
+          &.angularJS{
+            svg{
+              path{
+                fill: $angularJS;
+              }
+            }
+          }
+          &.react{
+            svg{
+              path{
+                fill: $react;
+              }
+            }
+          }
+          &.php{
+            svg{
+              path{
+                fill: $php;
+              }
+            }
+          }
+          &.database{
+            svg{
+              path{
+                fill: $database;
+              }
+            }
+          }
+          &.nextJs{
+            svg{
+              path{
+                fill: $nextJs;
+              }
+            }
+          }
+          &.laravel{
+            svg{
+              path{
+                fill: $laravel;
+              }
+            }
+          }
+          &.codeigniter{
+            svg{
+              path{
+                fill: $codeigniter;
+              }
+            }
+          }
+          &.jquery{
+            svg{
+              path{
+                fill: $jquery;
+              }
+            }
+          }
+        }
+      }
+      .icon{
+        @include flexBox(center,center);
+        svg{
+          @include square(45px);
+          path{
+            fill: var(--grayscale-color);
+          }
+        }
+      }
+    }
+  }
+  .moreBox{
+    width: 20%;
+    @include flexBox(center,flex-end);
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .more{
+      margin: 10px 0;
+      border: 1px solid var(--grayscale-color);
+      padding: 5px;
+      border-radius: 16px;
+      @include flexBox(center,center);
+      &:hover{
+        background-color: $specific;
+      }
+      .text{
+        span{
+          color: var(--grayscale-color);
+        }
+      }
+      .icon{
+        padding: 0 10px;
+        svg{
+          @include square(15px);
+          display: block;
+          path{
+            fill: var(--grayscale-color);
+          }
+        }
+      }
+    }
+  }
+}

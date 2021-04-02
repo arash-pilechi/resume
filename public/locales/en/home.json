@@ -1,0 +1,34 @@
+{
+  "user1": {
+    "seo": {
+      "title": "Resume of Arash Pilechi",
+      "description": "Resume, introduction and view examples of designed sites",
+      "keywords": "Resume of Arash Pilechi, programmer, Web designer, web site designer, web developer, web site developer, frontend programmer, nextjs programmer, next js programmer, react programmer, js programmer, javascript programmer, angularjs programmer, angular js programmer, jquery programmer, html programmer, Css programmer, sass programmer, scss programmer, programmer familiar with php, programmer familiar with laravel, programmer familiar with codeigniter, programmer familiar with phpmyadmin"
+    },
+    "name": "Arash Pilechi",
+    "specialities1": "Frontend Developer",
+    "detail1": [
+      "Degree",
+      "Bachelor of Software"
+    ],
+    "detail2": [
+      "Age",
+      "Born in 1989"
+    ],
+    "detail3": [
+      "Location",
+      "Iran, Mashhad"
+    ],
+    "detail4": [
+      "Military Service Status",
+      "End of Service"
+    ],
+    "detail5": [
+      "Language",
+      "Persian and English"
+    ]
+  },
+  "see_more_details": "See more details",
+  "see_specialities": "View specialties",
+  "see_samples": "View portfolio"
+}

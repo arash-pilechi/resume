@@ -1,0 +1,16 @@
+[
+  {
+    "id": "mobile",
+    "visibility": true,
+    "link": "tell:+989154134341",
+    "text": "+989154134341",
+    "icon": "mobile"
+  },
+  {
+    "id": "mail",
+    "visibility": true,
+    "link": "mailto:a.plc.kh@gmail.com",
+    "text": "a.plc.kh@gmail.com",
+    "icon": "envelope"
+  }
+]

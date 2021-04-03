@@ -10,20 +10,20 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 
 function Home({primaryData}) {
     const {t} = useTranslation('home');
-    const { initialData, error } = useSWR(() => primaryData.user && `/api/users/${primaryData.user}/home`, fetcher);
+    const { data, error } = useSWR(() => primaryData.user && `/api/users/${primaryData.user}/home`, fetcher);
     if (error) return <p>something's wrong ...</p>
-    if (!initialData) return <Spinner />
+    if (!data) return <Spinner />
     return (
         <>
             <Head>
-                <title>{t(`${initialData.currentUser}.seo.title`)}</title>
-                <meta name="description" content={t(`${initialData.currentUser}.seo.description`)} />
-                <meta name="keywords" content={t(`${initialData.currentUser}.seo.keywords`)} />
+                <title>{t(`${data.currentUser}.seo.title`)}</title>
+                <meta name="description" content={t(`${data.currentUser}.seo.description`)} />
+                <meta name="keywords" content={t(`${data.currentUser}.seo.keywords`)} />
             </Head>
-            <Layout socialMedia={initialData.socialMedia}
-                    contactInfo={initialData.contactInfo}>
-                <Main currentUser={initialData.currentUser}
-                      specialties={initialData.specialties}/>
+            <Layout socialMedia={data.socialMedia}
+                    contactInfo={data.contactInfo}>
+                <Main currentUser={data.currentUser}
+                      specialties={data.specialties}/>
             </Layout>
         </>
     )

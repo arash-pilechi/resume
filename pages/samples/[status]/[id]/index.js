@@ -12,22 +12,22 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 function Sample({primaryData}) {
     const { query } = useRouter()
     const {t} = useTranslation('samples');
-    const { initialData, error } = useSWR(() => (primaryData.user && query) && `/api/users/${primaryData.user}/samples/${query.status}/${query.id}`, fetcher);
+    const { data, error } = useSWR(() => (primaryData.user && query) && `/api/users/${primaryData.user}/samples/${query.status}/${query.id}`, fetcher);
     if (error) return <p>something's wrong ...</p>
-    if (!initialData) return <Spinner />
+    if (!data) return <Spinner />
     return (
         <>
             <Head>
-                <title>{t(`${initialData.currentUser}.seo.title`)}</title>
-                <meta name="description" content={t(`${initialData.currentUser}.seo.description`)} />
-                <meta name="keywords" content={t(`${initialData.currentUser}.seo.keywords`)} />
+                <title>{t(`${data.currentUser}.seo.title`)}</title>
+                <meta name="description" content={t(`${data.currentUser}.seo.description`)} />
+                <meta name="keywords" content={t(`${data.currentUser}.seo.keywords`)} />
             </Head>
-            <Layout socialMedia={initialData.socialMedia}
-                    contactInfo={initialData.contactInfo}>
-                <Main currentUser={initialData.currentUser}
-                      initialData={initialData.sample}
-                      specialties={initialData.specialties}
-                      status={initialData.status}
+            <Layout socialMedia={data.socialMedia}
+                    contactInfo={data.contactInfo}>
+                <Main currentUser={data.currentUser}
+                      initialData={data.sample}
+                      specialties={data.specialties}
+                      status={data.status}
                 />
             </Layout>
         </>

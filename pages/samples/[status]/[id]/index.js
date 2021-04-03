@@ -1,11 +1,20 @@
 import Head from "next/head";
+import { useRouter } from 'next/router'
 import {useTranslation} from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import useSWR from 'swr'
 import Layout from "@/layout/default";
 import Main from '@/main/sample'
+import Spinner from "@/utility/preloader/spinner";
 
-function Sample({initialData}) {
+const fetcher = (url) => fetch(url).then((res) => res.json());
+
+function Sample({primaryData}) {
+    const { query } = useRouter()
     const {t} = useTranslation('samples');
+    const { initialData, error } = useSWR(() => (primaryData.user && query) && `/api/users/${primaryData.user}/samples/${query.status}/${query.id}`, fetcher);
+    if (error) return <p>something's wrong ...</p>
+    if (!initialData) return <Spinner />
     return (
         <>
             <Head>
@@ -25,14 +34,14 @@ function Sample({initialData}) {
     )
 }
 
-export const getServerSideProps = async (context) => {
-    const {params: {status, id},locale} = context;
-    const res = await fetch(`${process.env.HOST}/api/users/${process.env.USER}/samples/${status}/${id}`);
-    const initialData = await res.json();
+export const getServerSideProps = async ({locale}) => {
+    const primaryData = {
+        user: process.env.USER
+    }
     return{
         props: {
             ...await serverSideTranslations(locale, ['common','samples']),
-            initialData
+            primaryData
         },
     }
 }

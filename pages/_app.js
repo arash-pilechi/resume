@@ -3,7 +3,6 @@ import Router from 'next/router';
 import { appWithTranslation } from 'next-i18next'
 import NProgress from 'nprogress';
 import MainContextProvider from "@/context/main/provider";
-import 'swiper/swiper.scss';
 import '@/styles/global/index.scss';
 
 Router.events.on('routeChangeStart', () => NProgress.start());

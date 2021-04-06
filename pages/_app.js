@@ -14,6 +14,10 @@ function MyApp({ Component, pageProps }) {
     return (
         <MainContextProvider>
             <Head>
+                <meta charSet='utf-8'/>
+                <meta httpEquiv="X-UA-Compatible" content="IE=edge"/>
+                <meta name="theme-color" content="#00222a"/>
+                <meta name='viewport' content='initial-scale=1.0, width=device-width, user-scalable=no'/>
                 <link rel="icon" href="/images/icon/favicon.ico" />
             </Head>
             <Component {...pageProps} />

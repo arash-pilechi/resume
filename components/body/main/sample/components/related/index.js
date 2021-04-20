@@ -5,9 +5,12 @@ const Index = ({initialData,currentUser}) => {
     const {t} = useTranslation('samples');
     return(
         <div className={styles.related}>
-            <div className={styles.title}>
-                <p>{t('related')}:</p>
-            </div>
+            {
+                initialData.address?.length === 0 &&
+                    <div className={styles.title}>
+                        <p>{t('related')}:</p>
+                    </div>
+            }
             <div className={styles.list}>
                 {
                     initialData.related.map( item =>

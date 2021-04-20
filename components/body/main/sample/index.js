@@ -20,9 +20,12 @@ const Index = ({initialData,specialties,currentUser,status}) => {
                         <>
                             <Technologies initialData={initialData} currentUser={currentUser} specialties={specialties} />
                             {
-                                initialData.related?.length > 0
-                                    ?   <Related initialData={initialData} currentUser={currentUser} />
-                                    :   <View initialData={initialData} currentUser={currentUser} />
+                                initialData.related?.length > 0 &&
+                                    <Related initialData={initialData} currentUser={currentUser} />
+                            }
+                            {
+                                initialData.address?.length > 0 &&
+                                    <View initialData={initialData} currentUser={currentUser} />
                             }
                         </>
                 }

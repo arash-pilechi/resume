@@ -6,7 +6,7 @@ usage:
 ```bash
 replace your informaition with user1
 
-#  add users for other job categories
+#  add users for other job categories if you need
 ```
 
 

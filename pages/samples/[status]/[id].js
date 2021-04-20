@@ -34,7 +34,7 @@ function Sample({primaryData}) {
     )
 }
 
-export const getServerSideProps = async ({locale}) => {
+export const getStaticProps = async ({locale}) => {
     const primaryData = {
         user: process.env.USER
     }
@@ -43,6 +43,24 @@ export const getServerSideProps = async ({locale}) => {
             ...await serverSideTranslations(locale, ['common','samples']),
             primaryData
         },
+    }
+}
+export async function getStaticPaths() {
+    return {
+        paths: [
+            { params: { status: "online", id: 'salamati_24' } },
+            { params: { status: "online", id: 'baazad' } },
+            { params: { status: "online", id: 'hami_cms' } },
+            { params: { status: "online", id: 'mycrs_cms' } },
+            { params: { status: "online", id: 'taxi_360' } },
+            { params: { status: "online", id: 'giant_mashhad' } },
+            { params: { status: "online", id: 'hamihamrah' } },
+            { params: { status: "online", id: 'mycrs' } },
+            { params: { status: "offline", id: 'hashtag_media' } },
+            { params: { status: "offline", id: 'negin_khatam' } },
+            { params: { status: "offline", id: 'tooscafe' } },
+        ],
+        fallback: false,
     }
 }
 export default Sample

@@ -18,12 +18,18 @@
       "salamati_24": {
         "name": "salamati 24",
         "describe": "Salamat 24 website to book doctor's appointments in offices, clinics and online and text video consulting offline",
-        "position": "Programmer and front-end department manager"
+        "position": "Programmer and front-end department manager",
+        "related": {
+          "salamati24_old": "Old version"
+        }
       },
       "baazad": {
         "name": "Baazad",
         "describe": "Free web application for discount system, App Store, Web Store and e-wallet",
-        "position": "Programmer and front-end department manager"
+        "position": "Programmer and front-end department manager",
+        "related": {
+          "bazaad_vercel": "Vercel version (latest update)"
+        }
       },
       "hamihamrah": {
         "name": "hamihamrah",

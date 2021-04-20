@@ -2,7 +2,7 @@
   "online": [
     {
       "id": "salamati_24",
-      "address": "http://www.salamati24.com:3000/fa",
+      "address": "https://salamati24.vercel.app/fa",
       "images": [
         {
           "type": "desktop",
@@ -63,6 +63,12 @@
         "scss",
         "javaScript",
         "react"
+      ],
+      "related":[
+        {
+          "id": "salamati24_old",
+          "address": "https://www.salamati24.com/fa"
+        }
       ]
     },
     {
@@ -136,6 +142,12 @@
         "scss",
         "javaScript",
         "react"
+      ],
+      "related":[
+        {
+          "id": "bazaad_vercel",
+          "address": "https://bazaad.vercel.app/"
+        }
       ]
     },
     {

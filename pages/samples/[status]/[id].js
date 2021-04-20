@@ -60,7 +60,7 @@ export async function getStaticPaths() {
             { params: { status: "offline", id: 'negin_khatam' } },
             { params: { status: "offline", id: 'tooscafe' } },
         ],
-        fallback: false,
+        fallback: true,
     }
 }
 export default Sample

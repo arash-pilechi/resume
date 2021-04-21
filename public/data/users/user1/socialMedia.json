@@ -31,12 +31,22 @@
   },
   {
     "id": "facebook",
-    "visibility": false,
+    "visibility": true,
     "address": {
       "fa": "https://www.facebook.com/arash.peelechi/",
       "en": "https://www.facebook.com/arash.peelechi/",
       "ar": "https://www.facebook.com/arash.peelechi/"
     },
     "icon": "facebook"
+  },
+  {
+    "id": "linkedin",
+    "visibility": true,
+    "address": {
+      "fa": "https://www.linkedin.com/in/arash-pilechi/",
+      "en": "https://www.linkedin.com/in/arash-pilechi/",
+      "ar": "https://www.linkedin.com/in/arash-pilechi/"
+    },
+    "icon": "linkedin"
   }
 ]

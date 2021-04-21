@@ -5,6 +5,7 @@
   .holder{
     padding-top: 20px;
     @include flexBox(center,center);
+    flex-wrap: wrap;
     border-top: 1px solid $specific;
   }
   .separator{

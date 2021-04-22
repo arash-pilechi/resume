@@ -1,11 +1,18 @@
 import Head from "next/head";
 import {useTranslation} from 'next-i18next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import useSWR from 'swr'
 import Layout from "@/layout/default";
 import Main from '@/main/home'
+import Spinner from '@/utility/preloader/spinner'
 
-function Home({data}) {
+const fetcher = (url) => fetch(url).then((res) => res.json());
+
+function Home({primaryData}) {
     const {t} = useTranslation('home');
+    const { data, error } = useSWR(() => primaryData.user && `/api/users/${primaryData.user}/home`, fetcher);
+    if (error) return <p>something's wrong ...</p>
+    if (!data) return <Spinner />
     return (
         <>
             <Head>
@@ -22,16 +29,15 @@ function Home({data}) {
     )
 }
 
-export async function getServerSideProps({ locale }) {
-    const currentUser = process.env.USER;
-    const res = await fetch(`https://arash-pilechi.vercel.app/api/users/${currentUser}/home`);
-    const data = await res.json();
-
-    return {
+export const getStaticProps = async ({ locale }) => {
+    const primaryData = {
+        user: process.env.USER
+    }
+    return{
         props: {
             ...await serverSideTranslations(locale, ['common','home']),
-            data
-        }
+            primaryData
+        },
     }
 }
 export default Home

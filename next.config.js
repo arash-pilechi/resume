@@ -1,36 +1,27 @@
-const withPlugins = require("next-compose-plugins");
-const withPWA = require("next-pwa");
-const isDev = process.env.NODE_ENV === "development";
-const path = require('path')
+const path = require('path');
 const { i18n } = require('./next-i18next.config');
-const runtimeCaching = require("next-pwa/cache");
+const withPWA = require('next-pwa');
+const runtimeCaching = require('next-pwa/cache');
+const withPlugins = require("next-compose-plugins");
+const isProd = process.env.NODE_ENV === "production";
 
 const plugins = [
-    [
-      withPWA,
-      {
-        pwa: {
-          disable: process.env.NODE_ENV === "development",
-          register: true,
-          scope: "/app",
-          sw: "service-worker.js",
-          //...
-        },
+  [
+    withPWA,
+    {
+      pwa: {
+        dest: 'public',
+        runtimeCaching,
       },
-    ],
-  ];
+    },
+  ]
+];
 const nextConfig = {
-  future: {
-    webpack5: true
-  },
   i18n,
+  swcMinify: true,
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
-  pwa: {
-    dest: "public",
-    runtimeCaching,
-    disable: isDev,
-  }
+  reactStrictMode: true,
 };
 module.exports = withPlugins(plugins, nextConfig);

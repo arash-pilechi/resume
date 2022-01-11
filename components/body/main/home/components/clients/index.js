@@ -8,7 +8,7 @@ import styles from './index.module.scss'
 const Index = ({currentUser}) => {
     const {t} = useTranslation();
     const counter = [];
-    for(let i = 1; i <= 8; i++){
+    for(let i = 1; i <= 9; i++){
         counter.push(i);
     }
     const params = {

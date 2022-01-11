@@ -9,7 +9,7 @@ const Index = ({initialData}) => {
             {
                 initialData.map((item,index) =>
                     <div className={`${styles.item} ${styles[item.id]} ${item.visibility ? '' : 'hidden'}`} key={index}>
-                        <a href={item.address[router.locale]} rel="me" target="_blank">
+                        <a href={item.address[router.locale]} rel="me noreferrer" target="_blank">
                             {SVG.dynamic(item.icon)}
                         </a>
                     </div>

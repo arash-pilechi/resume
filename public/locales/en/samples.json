@@ -18,18 +18,12 @@
       "salamati_24": {
         "name": "salamati 24",
         "describe": "Salamat 24 website to book doctor's appointments in offices, clinics and online and text video consulting offline",
-        "position": "Programmer and front-end department manager",
-        "related": {
-          "salamati24_old": "Old version"
-        }
+        "position": "Programmer and front-end department manager"
       },
       "baazad": {
         "name": "Baazad",
         "describe": "Free web application for discount system, App Store, Web Store and e-wallet",
-        "position": "Programmer and front-end department manager",
-        "related": {
-          "bazaad_vercel": "Vercel version (latest update)"
-        }
+        "position": "Programmer and front-end department manager"
       },
       "hamihamrah": {
         "name": "hamihamrah",
@@ -94,6 +88,11 @@
         "name": "Code Afarin",
         "describe": "Website of Kod Afarin Group to introduce portfolio and register orders",
         "position": "Head of IT Code Afarin Group"
+      },
+      "tonit": {
+        "name": "TONIT",
+        "describe": "Programming web application",
+        "position": "Programmer and front-end department manager"
       }
     }
   },

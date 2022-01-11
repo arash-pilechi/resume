@@ -14,8 +14,8 @@ const Index = ({initialData,currentUser}) => {
             <div className={styles.list}>
                 {
                     initialData.related.map( item =>
-                        <div className={styles.item}>
-                            <a href={item.address} target="_blank">
+                        <div className={styles.item} key={item.id}>
+                            <a href={item.address} rel="noreferrer" target="_blank">
                                 <p>{t(`${currentUser}.samples.${initialData.id}.related.${item.id}`)}</p>
                             </a>
                         </div>

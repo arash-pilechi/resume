@@ -6,7 +6,7 @@ const Index = ({initialData}) => {
     const {t} = useTranslation('samples');
     return(
         <div className={styles.view}>
-            <a href={initialData.address} target="_blank">
+            <a href={initialData.address} rel="noreferrer" target="_blank">
                 <button>
                     <div className={styles.icon}>
                         {SVG.browser()}

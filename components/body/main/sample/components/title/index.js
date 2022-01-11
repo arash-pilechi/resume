@@ -23,7 +23,7 @@ const Index = ({initialData,currentUser,status}) => {
                         <h1>{t(`${currentUser}.samples.${initialData.id}.name`)}</h1>
                     </div>
                :
-                    <a href={initialData.address} target="_blank">
+                    <a href={initialData.address} rel="noreferrer" target="_blank">
                         <div className={styles.text}>
                             <h1>{t(`${currentUser}.samples.${initialData.id}.name`)}</h1>
                         </div>

@@ -11,7 +11,7 @@ const fetcher = (url) => fetch(url).then((res) => res.json());
 function Home({primaryData}) {
     const {t} = useTranslation('home');
     const { data, error } = useSWR(() => primaryData.user && `/api/users/${primaryData.user}/home`, fetcher);
-    if (error) return <p>something's wrong ...</p>
+    if (error) return <p>somethings wrong ...</p>
     if (!data) return <Spinner />
     return (
         <>

@@ -13,7 +13,7 @@ function Sample({primaryData}) {
     const { query } = useRouter()
     const {t} = useTranslation('samples');
     const { data, error } = useSWR(() => (primaryData.user && query) && `/api/users/${primaryData.user}/samples/${query.status}/${query.id}`, fetcher);
-    if (error) return <p>something's wrong ...</p>
+    if (error) return <p>somethings wrong ...</p>
     if (!data) return <Spinner />
     return (
         <>

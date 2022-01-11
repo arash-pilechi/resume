@@ -2,7 +2,7 @@
   "online": [
     {
       "id": "salamati_24",
-      "address": "http://new.salamati24.com/",
+      "address": "https://salamati24.com/fa",
       "images": [
         {
           "type": "desktop",
@@ -63,12 +63,6 @@
         "scss",
         "javaScript",
         "react"
-      ],
-      "related":[
-        {
-          "id": "salamati24_old",
-          "address": "https://www.salamati24.com/fa"
-        }
       ]
     },
     {
@@ -142,12 +136,6 @@
         "scss",
         "javaScript",
         "react"
-      ],
-      "related":[
-        {
-          "id": "bazaad_vercel",
-          "address": "https://bazaad.vercel.app/"
-        }
       ]
     },
     {
@@ -431,25 +419,9 @@
       ]
     },
     {
-      "id": "giant_mashhad",
-      "address": "http://giantnaji.ir/",
+      "id": "tonit",
+      "address": "https://tonit.ir/",
       "images": [
-        {
-          "type": "desktop",
-          "fileName": "1.jpg"
-        },
-        {
-          "type": "desktop",
-          "fileName": "2.png"
-        },
-        {
-          "type": "desktop",
-          "fileName": "3.png"
-        },
-        {
-          "type": "desktop",
-          "fileName": "4.png"
-        },
         {
           "type": "mobile",
           "fileName": "1.png"
@@ -457,15 +429,26 @@
         {
           "type": "mobile",
           "fileName": "2.png"
+        },
+        {
+          "type": "mobile",
+          "fileName": "3.png"
+        },
+        {
+          "type": "mobile",
+          "fileName": "4.png"
+        },
+        {
+          "type": "mobile",
+          "fileName": "5.png"
         }
       ],
       "status": "product",
       "type": "website",
       "technologies":[
-        "html",
-        "css",
+        "scss",
         "javaScript",
-        "jquery"
+        "react"
       ]
     },
     {
@@ -574,6 +557,44 @@
         "javaScript",
         "jquery",
         "angularJs"
+      ]
+    },
+    {
+      "id": "giant_mashhad",
+      "address": "http://giantnaji.ir/",
+      "images": [
+        {
+          "type": "desktop",
+          "fileName": "1.jpg"
+        },
+        {
+          "type": "desktop",
+          "fileName": "2.png"
+        },
+        {
+          "type": "desktop",
+          "fileName": "3.png"
+        },
+        {
+          "type": "desktop",
+          "fileName": "4.png"
+        },
+        {
+          "type": "mobile",
+          "fileName": "1.png"
+        },
+        {
+          "type": "mobile",
+          "fileName": "2.png"
+        }
+      ],
+      "status": "product",
+      "type": "website",
+      "technologies":[
+        "html",
+        "css",
+        "javaScript",
+        "jquery"
       ]
     }
   ],

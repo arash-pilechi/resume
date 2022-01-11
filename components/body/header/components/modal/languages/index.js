@@ -30,8 +30,8 @@ const Index = ({setLanguagesModalVisibility}) => {
     return(
         <div className={styles.languagesModal} ref={dropdown}>
             {
-                router.locales.map(locale =>
-                    <div className={styles.language}>
+                router.locales.map((locale,index) =>
+                    <div className={styles.language} key={index}>
                         <Link href={router.asPath} locale={locale}>
                             <a>
                                 <div className={styles.icon}>

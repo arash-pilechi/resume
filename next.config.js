@@ -18,7 +18,7 @@ const plugins = [
 ];
 const nextConfig = {
   i18n,
-  swcMinify: true,
+  swcMinify: isProd,
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
   },
